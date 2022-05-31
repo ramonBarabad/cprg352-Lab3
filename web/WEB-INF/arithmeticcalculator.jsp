@@ -1,9 +1,3 @@
-<%-- 
-    Document   : arithmeticcalculator
-    Created on : May 30, 2022, 9:27:17 PM
-    Author     : barab
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
