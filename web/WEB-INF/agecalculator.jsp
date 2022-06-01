@@ -16,7 +16,7 @@
             <br>
             <c:if test="${not empty notification}">
                 <p>${notification}</p>            
-            </c:if>      `
+            </c:if>
             <a href="arithmetic" >Arithmetic Calculator</a>
         </form>
     </body>

@@ -21,7 +21,8 @@
             <br><br>
             <label>${notification}</label>
             <br>
-            <a href="age" >Age Calculator</a>
+           
         </form>
+             <a href="age" >Age Calculator</a>
     </body>
 </html>
