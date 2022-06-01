@@ -22,7 +22,10 @@ public class AgeCalculatorServlet extends HttpServlet {
             throws ServletException, IOException {
 
         getServletContext().getRequestDispatcher("/WEB-INF/agecalculator.jsp").forward(request, response);
+   
+    return;
     }
+    
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -30,7 +33,7 @@ public class AgeCalculatorServlet extends HttpServlet {
 
         String currentage = request.getParameter("current_age");
         String notification = "";
-        if (currentage.equals("")) {
+        if (currentage.equals("") || currentage.equals(null)) {
             notification = "You must give your current age.";
         } else {
             try {
@@ -42,7 +45,7 @@ public class AgeCalculatorServlet extends HttpServlet {
         }
         request.setAttribute("notification", notification);
         getServletContext().getRequestDispatcher("/WEB-INF/agecalculator.jsp").forward(request, response);
-
+        return;
     }
 
 }
